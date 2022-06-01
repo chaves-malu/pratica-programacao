@@ -10,6 +10,6 @@ foreach ($qtdIrmaos as $val)
     $msg .= $val . ", ";
 }
 
-echo "O nome é $nome, o gênero é $genero, o estado é $estado e são $msg irmãos.";
+echo "O nome é $nome,oi o gênero é $genero, o estado é $estado e são $msg irmãos.";
 
 ?>

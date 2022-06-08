@@ -1,11 +1,6 @@
 <?php
 
-    $porta = "localhost";
-    $usuario = "root";
-    $senha = "";
-    $banco = "cadastro";
-
-    $conexao = mysqli_connect($porta, $usuario, $senha, $banco);
+    $conexao = mysqli_connect('localhost', 'root', '', 'cadastro');
 
     if (!$conexao)
     {

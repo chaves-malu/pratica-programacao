@@ -12,7 +12,7 @@
     if (mysqli_query($conexao, $sql)) 
         echo "Cadastro realizado com sucesso!";
     else 
-        echo "Erro! ". mysqli_connect_errno($conexao);
+        echo "Erro! ". mysqli_connect_error($conexao);
     
     mysqli_close($conexao);
 

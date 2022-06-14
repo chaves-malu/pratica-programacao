@@ -13,43 +13,27 @@
 			<img id="menu" src="imagens/menu.png">
 		</div>
 		<br>
-		<form action="enviar.php" method="post" autocomplete="on">
+		<form action="cadastro.php" method="post" autocomplete="on">
 			<label for="name">Nome completo:</label>
 			<br>
 			<input type="text" id="name" name="name">
 			<br><br>
-			<label>Gênero:</label>
+			
+			<label for = "nascimento">Data de nascimento:</label>
 			<br>
-			<input type="radio" id="f" name="genero" value="Feminino">
-			<label for="f">Feminino</label>
-			<br>
-			<input type="radio" id="m" name="genero" value="Masculino">
-			<label for="m">Masculino</label>
+			<input type="date" id="date" name="date">
 			<br><br>
-			<label for="estados">Estado:</label><br>
-			<input list="estados" id="estados" name="estado">
-			<datalist id="estados">
-				<option value="AC">
-				<option value="AL">
-				<option value="AM">
-				<option value="BA">
-				<option value="PA">
-				<option value="CE">
-				<option value="GO">
-				<option value="MA">
-			</datalist>
+			
+			<label for="email">E-mail:</label>
+			<br>
+			<input type="email" id="email" name="email">
 			<br><br>
-			<label>Quantos irmãos vocês tem?</label>
+			
+			<label for="senha">Senha:</label>
 			<br>
-			<input type="checkbox" id="irmao1" name="irmao1" value="umIrmao">
-			<label for="irmao1">Apenas um irmão</label>
-			<br>
-			<input type="checkbox" id="irmao2" name="irmao2" value="doisIrmaos">
-			<label for="irmao2">Dois irmãos</label>
-			<br>
-			<input type="checkbox" id="irmao3" name="irmao3" value="maisTresIrmaos">
-			<label for="irmao3">Mais de três irmãos</label>
+			<input type="password" id="password" name="password">
 			<br><br>
+			
 			<input type="submit" id="en" name="enviar" value="Enviar">
 		</form>
 		<div id="logos">

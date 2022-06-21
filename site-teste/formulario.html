@@ -16,7 +16,7 @@
 		<form action="cadastro.php" method="post" autocomplete="on">
 			<label for="name">Nome completo:</label>
 			<br>
-			<input type="text" id="name" name="name" required>
+			<input type="text" id="name" name="name">
 			<br><br>
 			
 			<label for = "nascimento">Data de nascimento:</label>
@@ -34,7 +34,7 @@
 			<input type="password" id="password" name="password">
 			<br><br>
 			
-			<input type="submit" id="enviar" name="enviar" value="Enviar">
+			<input type="submit" id="enviar" name="enviar" value="Enviar" onclick="return validacao()">
 		</form>
 		<div id="logos">
 			<a href="https://www.tiktok.com/pt-BR/"><img class="im" src="imagens/tiktok.png" alt="Logo do Tiktok"></a>
@@ -46,15 +46,17 @@
 		<footer>
 			<p id="oi">Copyright © 2022</p>
 		</footer>
-		
+
 		<script type="text/javascript">
 
-			if (document.getElementById("name").value.length == 0) {
-				alert("Por favor, preencha o campo nome.")
-				return false
-			} else {
-				document.getElementById("enviar").submit()
-				return true
+			function validacao() {
+				if (document.getElementById("name").value.length == 0) {
+					alert("Por favor, preencha o campo nome.")
+					return false
+				} else {
+					document.getElementById("enviar").submit()
+					return true
+				}
 			}
 
 		</script>

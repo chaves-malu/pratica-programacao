@@ -7,7 +7,7 @@
     $email = $_REQUEST['email'];
     $senha = $_REQUEST['password'];
 
-    $sql = "INSERT INTO usuarios ('nome', 'nascimento', 'email', 'senha')  VALUES ('$nome', '$nascimento', '$email', '$senha')";
+    $sql = "INSERT INTO usuarios (`nome`, `nascimento`, `email`, `senha`)  VALUES ('$nome', '$nascimento', '$email', '$senha')";
     
     if (mysqli_query($conexao, $sql)) 
         echo "Cadastro realizado com sucesso!";

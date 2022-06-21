@@ -1,1 +1,1 @@
-# pratica_programacao
+# pratica-programacao

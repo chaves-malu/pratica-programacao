@@ -34,7 +34,7 @@
 			<input type="password" id="password" name="password">
 			<br><br>
 			
-			<input type="submit" id="en" name="enviar" value="Enviar">
+			<input type="submit" id="enviar" name="enviar" value="Enviar">
 		</form>
 		<div id="logos">
 			<a href="https://www.tiktok.com/pt-BR/"><img class="im" src="imagens/tiktok.png" alt="Logo do Tiktok"></a>
@@ -46,5 +46,17 @@
 		<footer>
 			<p id="oi">Copyright © 2022</p>
 		</footer>
+		
+		<script type="text/javascript">
+
+			if (document.getElementById("name").value.length == 0) {
+				alert("Por favor, preencha o campo nome.")
+				return false
+			} else {
+				document.getElementById("enviar").submit()
+				return true
+			}
+
+		</script>
 	</body>
 </html>
